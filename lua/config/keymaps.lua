@@ -24,6 +24,7 @@ map("n", "gi", vim.lsp.buf.implementation, { desc = "Implementation" })
 map("n", "K", vim.lsp.buf.hover, { desc = "Documentation" })
 map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+map("n", "<leader>f", function() require("conform").format() end, { desc = "Format file" })
 
 -- Diagnostics
 map("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
